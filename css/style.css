@@ -1,0 +1,373 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: bold; }
+
+.container {
+  width: 1180px;
+  margin: 0 auto; }
+
+.header {
+  padding-top: 30px; }
+  .header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .header__top-logo-link {
+      font-family: "Open Sans";
+      font-weight: bold;
+      font-size: 30px;
+      color: #000; }
+    .header__top-left {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .header__top-left-bag {
+        margin-left: 55px; }
+        .header__top-left-bag-link i {
+          color: #000;
+          margin-right: 15px; }
+  .header__nav {
+    padding-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 15px; }
+    .header__nav-item {
+      list-style: none;
+      margin-right: 55px; }
+      .header__nav-item-link {
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 13px;
+        color: #000; }
+      .header__nav-item-search {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 120px;
+        border-bottom: 3px solid #a8a8a8; }
+        .header__nav-item-search-window {
+          border: none;
+          width: 100px;
+          padding-bottom: 10px;
+          font-family: "Open Sans";
+          font-weight: bold;
+          font-size: 14px;
+          color: #a8a8a8; }
+        .header__nav-item-search-icon {
+          color: #a8a8a8;
+          display: inline; }
+
+.new {
+  position: absolute;
+  width: 55px;
+  height: 25px;
+  left: 0;
+  top: 15px;
+  background-color: #f14a58;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: medium;
+  font-size: 16px;
+  padding-top: 5px; }
+
+.sum {
+  width: 350px;
+  position: relative; }
+
+.main__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 100px; }
+  .main__first-block {
+    position: relative; }
+    .main__first-block-text {
+      position: absolute;
+      right: 100px;
+      top: 65px;
+      font-family: "Open Sans";
+      font-weight: bold;
+      font-size: 28px;
+      color: #000; }
+      .main__first-block-text.sale {
+        padding-top: 43px;
+        right: 155px;
+        font-family: "Times New Roman";
+        font-style: italic;
+        font-size: 13px;
+        color: #a8a8a8; }
+
+.main__bestoffers {
+  margin-bottom: 200px; }
+  .main__bestoffers-text {
+    font-family: "Times New Roman";
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 70px; }
+  .main__bestoffers-stock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .main__bestoffers-stock-item {
+      position: relative; }
+      .main__bestoffers-stock-item:nth-child(2), .main__bestoffers-stock-item:nth-child(4) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+      .main__bestoffers-stock-item-math {
+        font-size: 34px;
+        font-weight: bold;
+        padding-bottom: 150px; }
+      .main__bestoffers-stock-item-image {
+        position: relative;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+      .main__bestoffers-stock-item-arrow {
+        height: 55px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .main__bestoffers-stock-item-arrow_down {
+          height: 150px;
+          padding-top: 50px;
+          text-align: center; }
+          .main__bestoffers-stock-item-arrow_down-name {
+            font-size: 14px;
+            font-family: "Roboto";
+            font-weight: bold;
+            line-height: 1.714;
+            text-align: center;
+            margin: 0; }
+          .main__bestoffers-stock-item-arrow_down-price {
+            margin: 0;
+            font-size: 14px;
+            font-family: "Roboto";
+            line-height: 4.643;
+            text-align: center; }
+      .main__bestoffers-stock-item-old {
+        position: absolute;
+        top: 145px;
+        right: 200px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+        color: #a8a8a8; }
+        .main__bestoffers-stock-item-old:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: -10px;
+          right: 0;
+          bottom: 0;
+          width: 120%;
+          height: 2px;
+          background: #df818a;
+          -webkit-transform: rotate(-30deg);
+          -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg); }
+      .main__bestoffers-stock-item-new {
+        position: absolute;
+        top: calc(50% - 70px);
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        right: 105px;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 34px; }
+      .main__bestoffers-stock-item-add {
+        position: absolute;
+        height: 75px;
+        width: 340px;
+        right: 0;
+        bottom: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-top: 1px solid #a8a8a8;
+        border-left: 1px solid #a8a8a8;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 24px; }
+
+.main__arrivals {
+  margin-bottom: 75px; }
+  .main__arrivals-goods {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 100px; }
+
+.main__allarrivals {
+  height: 75px;
+  width: 340px;
+  border: 1px solid #a8a8a8;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px; }
+  .main__allarrivals-link {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    line-height: 2.708;
+    color: #000; }
+
+.fa-chevron-up {
+  color: #f14a58;
+  position: absolute;
+  font-size: 25px; }
+
+.fa-chevron-down {
+  color: #f14a58;
+  font-size: 25px; }
+
+.fa-twitter {
+  color: #a8a8a8; }
+
+.footer {
+  padding-top: 30px;
+  width: 100%; }
+  .footer__information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .footer__information-left {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      min-width: 420px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .footer__information-right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .footer__information-right-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .footer__information-right-item_text {
+          font-size: 16px;
+          font-family: "Times New Roman";
+          color: #a8a8a8;
+          font-style: italic;
+          line-height: 1.875;
+          width: 300px;
+          margin-bottom: 50px;
+          margin-top: 80px; }
+        .footer__information-right-item_quest {
+          margin-right: 100px; }
+    .footer__information-item_caption {
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      line-height: 4.063; }
+    .footer__information-item_link {
+      list-style: none;
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      line-height: 2.857; }
+  .footer__bottom {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 1px solid #a8a8a8;
+    position: relative; }
+    .footer__bottom .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .footer__bottom-left {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 50%; }
+      .footer__bottom-left-corp {
+        font-size: 12px;
+        font-family: "Roboto";
+        font-weight: bold;
+        line-height: 5.417; }
+      .footer__bottom-left-share {
+        font-size: 18px;
+        font-family: "OpenSans", sans-serif;
+        color: black;
+        font-weight: bold;
+        line-height: 3.611; }
+        .footer__bottom-left-share_count {
+          font-size: 12px;
+          font-family: "Roboto";
+          line-height: 5.417;
+          background-color: #f4f4f4; }
+    .footer__bottom-right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      right: 0;
+      top: 0; }
+      .footer__bottom-right p {
+        margin-top: 0;
+        margin-left: 35px;
+        font-size: 12px;
+        font-family: "Roboto";
+        font-weight: bold;
+        line-height: 5.417; }
